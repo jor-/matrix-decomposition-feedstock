@@ -1,0 +1,42 @@
+{% set version = "0.7" %}
+
+package:
+    name: matrix-decomposition
+    version: {{ version }}
+
+source:
+    fn: matrix-decomposition-{{ version }}.tar.gz
+    url: https://pypi.python.org/packages/12/ca/6334b2e43a38f6226d1acf27aeecf931c4c8a37bfac94177ac0fe31dd6b4/matrix-decomposition-{{ version }}.tar.gz
+    md5: b71c3ef17c1d1f7ac2406e0c2c1f9fdb
+
+build:
+    number: 0
+
+requirements:
+    build:
+        - setuptools >=0.8
+        - setuptools_scm
+        - python >=3.5
+        - numpy
+        - scipy >=0.19
+        - scikit-sparse >=0.4.2
+    run:
+        - python >=3.5
+        - numpy
+        - scipy >=0.19
+        - scikit-sparse >=0.4.2
+
+test:
+    requires:
+        - nose >=1.0
+        - pytest
+    source_files:
+        - matrix
+    commands:
+        - pytest
+
+about:
+    home: https://github.com/jor-/matrix-decomposition
+    license: GNU Affero General Public License v3 or later (AGPLv3+)
+    summary: 'decompose (factorize) dense and sparse matrices and solve associated systems of linear equations'
+    license_family: AGPL
