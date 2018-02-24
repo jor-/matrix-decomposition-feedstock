@@ -1,5 +1,5 @@
 {% set DATA = load_setup_py_data() %}
-{% set BRANCH = 'development' %}
+{% set BRANCH = 'develop' %}
 
 package:
     name: matrix-decomposition
