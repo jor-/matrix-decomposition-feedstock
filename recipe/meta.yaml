@@ -17,12 +17,12 @@ requirements:
     build:
         - setuptools >=0.8
         - python >=3.5
-        - numpy
+        - numpy >=1.15
         - scipy >=0.19
         - scikit-sparse >=0.4.2
     run:
         - python >=3.5
-        - numpy
+        - numpy >=1.15
         - scipy >=0.19
         - scikit-sparse >=0.4.2
 
