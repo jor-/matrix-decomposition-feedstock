@@ -17,12 +17,12 @@ requirements:
     host:
         - setuptools >=0.8
         - pip >=10
-        - python >=3.5
+        - python >=3.6
         - numpy >=1.15
         - scipy >=0.19
         - scikit-sparse >=0.4.2
     run:
-        - python >=3.5
+        - python >=3.6
         - numpy >=1.15
         - scipy >=0.19
         - scikit-sparse >=0.4.2
